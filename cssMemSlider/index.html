@@ -5,40 +5,65 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./normalize.css">
   <link rel="stylesheet" href="./style.css">
   <title>cssMemSlider</title>
 </head>
 
 <body>
 
-  <header>
+  <header class="header">
     <div class="wrapper">
       <h1>cssMemSlider</h1>
     </div>
   </header>
 
-  <main>
+  <main class="main">
     <div class="wrapper">
       <div class="slider">
-        <div class="slide">
-          <div class="slide__img1"></div>
-          <div class="slide__img2"></div>
-          <div class="slide__img3"></div>
-          <div class="slide__img4"></div>
-          <div class="slide__img5"></div>
+        <input type="radio" name="slider" id="switch1" checked="check">
+        <input type="radio" name="slider" id="switch2">
+        <input type="radio" name="slider" id="switch3">
+        <input type="radio" name="slider" id="switch4">
+        <input type="radio" name="slider" id="switch5">
+
+        <div class="slides">
+          <div class="slides__wrapper">
+            <div class="slide">
+              <div class="slide__img1 image"></div>
+              <h2 class="slide__text">Text1</h2>
+            </div>
+            <div class="slide">
+              <div class="slide__img2 image"></div>
+              <h2 class="slide__text">Text2</h2>
+            </div>
+            <div class="slide">
+              <div class="slide__img1 image"></div>
+              <h2 class="slide__text">Text1</h2>
+            </div>
+            <div class="slide">
+              <div class="slide__img2 image"></div>
+              <h2 class="slide__text">Text2</h2>
+            </div>
+            <div class="slide">
+              <div class="slide__img1 image"></div>
+              <h2 class="slide__text">Text2</h2>
+            </div>
+          </div>
+
         </div>
-        <div class="contols">
-          <input type="radio" name="slider" title="slide1" class="slide__control">
-          <input type="radio" name="slider" title="slide2" class="slide__control">
-          <input type="radio" name="slider" title="slide3" class="slide__control">
-          <input type="radio" name="slider" title="slide4" class="slide__control">
-          <input type="radio" name="slider" title="slide5" class="slide__control">
+        <div class="controls">
+          <label for="switch1"></label>
+          <label for="switch2"></label>
+          <label for="switch3"></label>
+          <label for="switch4"></label>
+          <label for="switch5"></label>
         </div>
       </div>
     </div>
   </main>
 
-  <footer>
+  <footer class="footer">
     <div class="wrapper">
       <a href="https://github.com/eloctro" target="_blank">github.com/eloctro</a>
     </div>
