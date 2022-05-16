@@ -1,0 +1,216 @@
+body {
+  background:rgb(174, 156, 156);
+}
+
+.header {
+  height: 10vh;
+}
+
+.footer {
+  height: 5vh;
+  margin: 0 auto;
+  font-size: 5vh;
+}
+
+.main {
+  height: 70vh;
+}
+
+.wrapper {
+  padding: 0 2vh
+}
+
+h1 {
+  font-size: 6vh;
+  text-align: center;
+  margin: 0;
+}
+
+.slide__text {
+  /* text-align: center; */
+  font-size: 2vh;
+  margin-left: 9%;
+}
+
+.wrapper {
+  margin: 0 auto;
+  height: 100%;
+}
+
+.slides {
+  width: 100%;
+  /* height: 55vh; */
+  overflow: hidden;
+  /* margin-bottom: 5vh; */
+}
+
+.slides__wrapper {
+  display: flex;
+  width: 500%; 
+  transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+ 
+}
+
+.slider {
+  margin: 0 auto;
+  width: 80vw;
+  height: 100%;
+}
+
+.slide {
+  width: 20%;
+  
+}
+
+.image {
+  height: 50vh;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+  margin-bottom: 4%;
+}
+
+.slide__img1 {
+  padding-top: 15%;
+}
+
+.slide__img2 {
+  background-image: url(./img/slide1.jpg);
+}
+
+.slide__img3 {
+  background-image: url(./img/slide2.jpg);
+}
+
+.slide__img4 {
+  background-image: url(./img/slide3.jpg);
+}
+
+.slide__img5 {
+  background-image: url(./img/slide4.jpg);
+}
+
+.controls label{ /*стиль отдельного переключателя*/
+	border-radius: 20%; /*скругление углов*/
+	display: inline-block; /*расположение в строку*/
+	width: 3vh;
+	height: 2vh;
+	background:rgb(28, 153, 21);
+  margin-left: 3%;
+}
+
+.controls { /*расположение блока с переключателями*/
+	margin: -14.5% 0 0 65%;
+	/* text-align: center; */
+
+}
+
+.controls label:hover {
+  background: rgb(37, 57, 93);
+  cursor: pointer;
+}
+
+input {
+  display: none;
+}
+
+#switch1:checked ~ .slides .slides__wrapper{
+	margin-left: 0;
+}
+
+#switch2:checked ~ .slides .slides__wrapper{
+	margin-left: -100%;
+}
+
+#switch3:checked ~ .slides .slides__wrapper{
+	margin-left: -200%;
+}
+
+#switch4:checked ~ .slides .slides__wrapper{
+	margin-left: -300%;
+}
+
+#switch5:checked ~ .slides .slides__wrapper{
+	margin-left: -400%;
+}
+
+#switch1:checked ~ .controls label:nth-child(1),
+#switch2:checked ~ .controls label:nth-child(2),
+#switch3:checked ~ .controls label:nth-child(3),
+#switch4:checked ~ .controls label:nth-child(4),
+#switch5:checked ~ .controls label:nth-child(5) {
+  background: yellow;
+}
+
+#slides .image{ /*анимация пролистывания изображений*/
+	transition: all 800ms cubic-bezier(0.770, 0.000, 0.175, 1.000);
+}
+
+
+@media (max-width: 1100px) {
+  .slides {
+    /* height: 70vh; */
+  }
+}
+
+
+@media (max-width: 1000px) {
+  .slides {
+    /* height: 70vh; */
+  }
+}
+
+
+@media (max-width: 900px) {
+  .controls {
+    width: 25vw;
+    margin: auto;
+    margin: -10% auto 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .slides {
+    /* height: 70vh; */
+  }
+
+  .slide__text {
+    margin: 0%;
+    text-align: center;
+  }
+
+  .controls {
+    width: 40vw;
+    margin: auto;
+    margin: -10% auto 0;
+  }
+}
+
+
+@media (max-width: 500px) {
+  
+  .slide__text {
+    margin: 0;
+    text-align: left;
+  }
+
+  .controls {
+    width: 40vw;
+    margin: -10% auto 0;
+  }
+}
+
+
+@media (max-width: 380px) {
+  
+  .slide__text {
+    margin: 0;
+    /* text-align: center; */
+  }
+
+  .controls {
+    width: 40vw;
+    margin: -28% auto 0;
+  }
+}
+
