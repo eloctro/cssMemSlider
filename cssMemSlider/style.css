@@ -23,6 +23,7 @@ body {
 h1 {
   font-size: 6vh;
   text-align: center;
+  margin: 0;
 }
 
 .slide__text {
@@ -164,6 +165,7 @@ input {
   .controls {
     width: 25vw;
     margin: auto;
+    margin: -10% auto 0;
   }
 }
 
@@ -180,6 +182,7 @@ input {
   .controls {
     width: 40vw;
     margin: auto;
+    margin: -10% auto 0;
   }
 }
 
@@ -193,7 +196,7 @@ input {
 
   .controls {
     width: 40vw;
-    margin: -15% auto 0;
+    margin: -10% auto 0;
   }
 }
 
