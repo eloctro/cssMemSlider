@@ -1,5 +1,5 @@
 body {
-  background: black;
+  background: white;
 }
 
 .header {
@@ -52,11 +52,23 @@ body {
 }
 
 .slide__img1 {
-  background-image: url(./img/demotivtory_11.jpg);
+  /* background-image: url(./img/demotivtory_11.jpg); */
 }
 
 .slide__img2 {
-  background-image: url(./img/mTKQp1UgtTBRwnaX.jpg);
+  background-image: url(./img/slide\(1\).jpg);
+}
+
+.slide__img3 {
+  background-image: url(./img/slide\(2\).jpg);
+}
+
+.slide__img4 {
+  background-image: url(./img/slide\(3\).jpg);
+}
+
+.slide__img5 {
+  background-image: url(./img/slide\(4\).jpg);
 }
 
 .controls label{ /*стиль отдельного переключателя*/
@@ -116,15 +128,29 @@ input {
 }
 
 
+@media (min-width: 1100px) {
+  .slides {
+    height: 90vh;
+  }
+}
+
+
+@media (min-width: 1000px) {
+  .slides {
+    height: 80vh;
+  }
+}
+
+
 @media (max-width: 900px) {
   .slides {
-    height: 65vh;
+    height: 75vh;
   }
 }
 
 @media (max-width: 768px) {
   .slides {
-    height: 60vh;
+    height: 70vh;
   }
 }
 
