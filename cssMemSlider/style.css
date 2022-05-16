@@ -21,7 +21,7 @@ body {
 }
 
 h1 {
-  font-size: 7vh;
+  font-size: 6vh;
   text-align: center;
 }
 
@@ -99,7 +99,7 @@ h1 {
 }
 
 .controls { /*расположение блока с переключателями*/
-	margin: 0 0 0 65%;
+	margin: -14.5% 0 0 65%;
 	/* text-align: center; */
 
 }
@@ -183,8 +183,31 @@ input {
   }
 }
 
+
 @media (max-width: 500px) {
-  .slides {
-    /* height: 50vh; */
+  
+  .slide__text {
+    margin: 0;
+    text-align: left;
+  }
+
+  .controls {
+    width: 40vw;
+    margin: -15% auto 0;
   }
 }
+
+
+@media (max-width: 380px) {
+  
+  .slide__text {
+    margin: 0;
+    /* text-align: center; */
+  }
+
+  .controls {
+    width: 40vw;
+    margin: -28% auto 0;
+  }
+}
+
